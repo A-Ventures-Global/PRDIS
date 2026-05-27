@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "prdis"
+version = "1.0.0"
+description = "Profit Routed per Dollar of Inference Spend — an open metric for AI inference efficiency in commerce."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "A-Ventures Global" }]
+keywords = ["ai", "inference", "commerce", "metrics", "agentic-commerce", "unit-economics"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/A-Ventures-Global/prdis"
+Specification = "https://github.com/A-Ventures-Global/prdis/blob/main/SPEC.md"
+
+[tool.hatch.build.targets.wheel]
+packages = ["prdis"]
